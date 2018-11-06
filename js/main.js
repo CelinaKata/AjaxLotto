@@ -54,7 +54,7 @@ let serverData = {
             max.focus();
             return;    
         } else if (max.value <= 0 || max.value > 99){
-            alert("You must enter a Max between 1 and 99!");
+            alert("You must enter a Max of the Range between 2 and 99!");
             max.focus();
             return;  
         }
