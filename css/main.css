@@ -1,0 +1,153 @@
+@import "https://fonts.googleapis.com/css?family=Ubuntu:400,700";
+
+:root{
+    --brown: #C35508; 
+    --browndk: #481D0B;
+    --yellowlg: #FFECC6;
+    --FS1: 3.157rem; 
+    --FS2: 2.369rem;
+    --FS3: 1.777rem;
+    --FS4: 1.333rem;
+    --FS5: 1rem;
+    --FS_small: 0.75rem;
+}
+
+/*************************************************
+            DEFAULTS
+*************************************************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+html{
+    font-size: 16px;
+    font-family: Ubuntu, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+}
+body {
+    margin: 0 auto;
+    max-width: 90%; /* 50em; */
+    padding: 1rem 1rem;
+    color: #555;
+}
+p{
+    font-size: var(--FS4);
+    line-height: 2.5rem;
+}
+
+/*************************************************
+            HEADER
+*************************************************/
+header{
+    padding: 1rem 1rem;
+    height: 250px;
+    background-color: var(--yellowlg);
+    background-image: url(../img/arthur-ogleznev-745251-unsplash.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 10px solid var(--brown);
+    /*border-bottom: 10px solid var(--brown);
+    margin-bottom: 1rem;*/
+    }
+
+h1{
+    font-size: var(--FS1);
+    color: #481D0B;
+    text-shadow: 2px 2px var(--brown);
+}
+
+/*************************************************
+            page CONTENT
+*************************************************/
+.main{
+    padding: 1rem;
+    border: 1px solid #000000;
+}
+.formBox {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+}
+.formBox label{
+    flex-basis: 12rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.formBox span{
+    flex-basis: 3rem;
+}
+.formBox input {
+    font-size: var(--FS4);
+    flex-basis: 5rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border: 1px solid var(--browndk);
+    padding-left: 1rem;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    margin-right: 1rem;
+    margin-top: 3rem;
+    font-size: var(--FS4);
+    color: #FFFFFF;
+    background-color: var(--brown);
+}
+
+.page {
+    padding: 1rem 1rem;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+.num_list{
+    padding-top: 1rem;
+}
+.num_list li {
+    width: 10rem;
+    height: 5rem;
+    margin: 0 1rem 2rem 1rem;
+    font-size: var(--FS2);
+    line-height: 5rem;
+    text-align: center;
+    border: 4px solid var(--brown);
+    color: var(--browndk);
+    background-color: var(--yellowlg);
+    list-style: none;
+    float: left;
+}
+/*.num_list li:last-of-type {
+    margin-right: 0;
+}*/
+
+#btnBack {
+    clear: both;
+    display: block;
+    margin-left: 2rem;
+}
+
+@media (max-width: 599px){
+    .num_list li{
+        font-size: var(--FS2);
+        width: 10rem;
+        height: 5rem;
+        line-height: 5rem;
+    }
+}
+@media (min-width: 600px){
+    .num_list li{
+        font-size: var(--FS3);
+        width: 8rem;
+        height: 4rem;
+        line-height: 4rem;
+    }
+}
