@@ -1,0 +1,2 @@
+# AjaxLotto
+Project Ajax Lotto
