@@ -90,22 +90,28 @@ h1{
     border: 1px solid var(--browndk);
     padding-left: 1rem;
 }
-
 button {
     width: 200px;
     height: 50px;
-    margin-right: 1rem;
-    margin-top: 3rem;
     font-size: var(--FS4);
     color: #FFFFFF;
     background-color: var(--brown);
 }
-
+#btnSend {
+    margin-right: 1rem;
+    margin-top: 3rem;
+}
+#btnBack {
+    clear: both;
+    display: block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 3rem;
+}
 .page {
     padding: 1rem 1rem;
     display: none;
 }
-
 .active {
     display: block;
 }
@@ -113,11 +119,6 @@ button {
     padding-top: 1rem;
 }
 .num_list li {
-    width: 10rem;
-    height: 5rem;
-    margin: 0 1rem 2rem 1rem;
-    font-size: var(--FS2);
-    line-height: 5rem;
     text-align: center;
     border: 4px solid var(--brown);
     color: var(--browndk);
@@ -125,22 +126,19 @@ button {
     list-style: none;
     float: left;
 }
-/*.num_list li:last-of-type {
-    margin-right: 0;
-}*/
-
-#btnBack {
-    clear: both;
-    display: block;
-    margin-left: 2rem;
-}
-
 @media (max-width: 599px){
+    #list{
+        
+    }
     .num_list li{
         font-size: var(--FS2);
         width: 10rem;
         height: 5rem;
         line-height: 5rem;
+        margin: 0 1rem 2rem 1rem;
+    }
+    #btnBack {
+        margin-left: 1rem;
     }
 }
 @media (min-width: 600px){
@@ -149,5 +147,9 @@ button {
         width: 8rem;
         height: 4rem;
         line-height: 4rem;
+        margin: 0 2rem 2.5rem 2rem;
+    }
+    #btnBack {
+        margin-left: 2rem;
     }
 }
